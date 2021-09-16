@@ -1,0 +1,10 @@
+{
+  "name": "graphql_test",
+  "version": "1.0.0",
+  "description": "graphql_test",
+  "main": "index.js",
+  "repository": "https://github.com/seperman-jh/graphql_test",
+  "keywords": [],
+  "author": "seperman.jh",
+  "license": "ISC"
+}
