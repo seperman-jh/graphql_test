@@ -3,8 +3,29 @@
   "version": "1.0.0",
   "description": "graphql_test",
   "main": "index.js",
-  "repository": "https://github.com/seperman-jh/graphql_test",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seperman-jh/graphql_test.git"
+  },
   "keywords": [],
   "author": "seperman.jh",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seperman-jh/graphql_test/issues"
+  },
+  "homepage": "https://github.com/seperman-jh/graphql_test#readme",
+  "scripts": {
+    "test": "graphql_test",
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.6",
+    "nodemon": "^2.0.12"
+  }
 }
