@@ -1,3 +1,14 @@
-type Query{
-    name: String!
+type user_type {
+    user_id         : String!
+    name            : String
+    email           : String!
+    lastlogin_date  : String!
+    age             : Int!
+    gender          : String!
 }
+
+
+type Query {
+    user: user_type
+}
+
