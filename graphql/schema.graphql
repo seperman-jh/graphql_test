@@ -1,14 +1,18 @@
-type user_type {
+# 쿼리를 요청할 때 필드 셋 + 타입 지정한다.
+# 이때 실제 DB 데이터는 이 필드 셋과 동일한 필드의 값만 가져온다.
+# 이곳에 필드셋을 지정해야 가져올수 있다.
+type basic_user_type {
+    seq             : Int!
     user_id         : String!
-    name            : String
-    email           : String!
-    lastlogin_date  : String!
+    name            : String!
     age             : Int!
     gender          : String!
 }
 
 
+#결과값이 Array일땐 [] 으로 감싸준다.
 type Query {
-    user: user_type
+    basic_user                  : [basic_user_type]
+    basic_person(seq: Int!)     : basic_user_type
 }
 
