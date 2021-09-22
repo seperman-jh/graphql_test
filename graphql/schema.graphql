@@ -11,8 +11,9 @@ type basic_user_type {
 
 
 #결과값이 Array일땐 [] 으로 감싸준다.
+#Resolver에도 동일한 필드명으로 필드셋을 정의해 주어야 한다.
 type Query {
     basic_user                  : [basic_user_type]
-    basic_person(seq: Int!)     : basic_user_type
+    basic_person(seq: Int!)     : [basic_user_type]
 }
 
